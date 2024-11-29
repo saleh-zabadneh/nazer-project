@@ -133,7 +133,6 @@ export default function ShippingTable() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-      <h2 className="text-2xl font-bold mb-4 text-primary">Shipping Table</h2>
       <div className="flex space-x-2 mb-4">
         <Dialog>
           <DialogTrigger asChild>
@@ -183,7 +182,7 @@ export default function ShippingTable() {
         </DropdownMenu>
       </div>
       <div className="rounded-md border border-border overflow-hidden">
-        <ScrollArea className="h-[calc(100vh-200px)]">
+        <ScrollArea className="h-[calc(100vh-310px)]">
           <div className="w-[250px] sm:w-[1200px] min-w-full">
             <Table ref={tableRef} className="border-collapse">
               <TableHeader>
@@ -232,7 +231,7 @@ export default function ShippingTable() {
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
       </div>
-      <div className="flex justify-end">
+      {/* <div className="flex justify-end">
         <Button
           type="submit"
           className="bg-primary text-primary-foreground hover:bg-primary/90"
@@ -240,7 +239,7 @@ export default function ShippingTable() {
           <Save className="mr-2 h-4 w-4" />
           Save
         </Button>
-      </div>
+      </div> */}
     </form>
   );
 }
