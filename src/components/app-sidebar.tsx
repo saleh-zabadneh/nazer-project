@@ -4,9 +4,12 @@ import {
   Command,
   Frame,
   GalleryVerticalEnd,
+  LayoutDashboard,
   Map,
+  MessageSquare,
   PieChart,
   Users,
+  Vote,
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
@@ -30,17 +33,17 @@ const data = {
   },
   teams: [
     {
-      name: "Nazeer Marzoukah",
+      name: "Kamel Yousef",
       logo: GalleryVerticalEnd,
       plan: "Owner",
     },
     {
-      name: "Nazeer Marzoukah.",
+      name: "Kamel Yousef.",
       logo: AudioWaveform,
       plan: "Owner",
     },
     {
-      name: "Nazeer Marzoukah.",
+      name: "Kamel Yousef.",
       logo: Command,
       plan: "Owner",
     },
@@ -73,19 +76,24 @@ const data = {
   ],
   projects: [
     {
-      name: "Design Engineering",
-      url: "#",
-      icon: Frame,
+      name: "Dashboard",
+      url: "/login",
+      icon: LayoutDashboard,
     },
     {
-      name: "Sales & Marketing",
-      url: "#",
-      icon: PieChart,
+      name: "Elections",
+      url: "/elections",
+      icon: Vote,
     },
     {
-      name: "Travel",
+      name: "Employee",
+      url: "/employees",
+      icon: Users,
+    },
+    {
+      name: "Complains",
       url: "#",
-      icon: Map,
+      icon: MessageSquare,
     },
   ],
 };
